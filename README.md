@@ -1,4 +1,4 @@
-### Movie ticket微信票务小程序
+### Movie ticket微信票务小程序-主体
 
 ####Explain
 Movie ticket是一款在线票务、购物小程序，主要针对国内海外人士在线购票的一款在线购物系统。
