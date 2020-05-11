@@ -5,11 +5,11 @@ Movie ticket是一款在线票务、购物小程序，主要针对国内海外�
 
 主要包含以下3个系统模块：
 
-movie-ticket-wechart(小程序主体)
+- movie-ticket-wechart(小程序主体)
 
-wx-scheme-admin(后台管理)
+- wx-scheme-admin(后台管理)
 
-wx-scheme-server(后端)；
+- wx-scheme-server(后端)；
 
 前端主要使用Vue-create脚手架开发，后端使用egg作为主要框架；小程序使用了VantUi/iViewUi等。
 （了解更多相关资料点击下方链接。）
