@@ -1,6 +1,6 @@
-### Movie ticket微信票务小程序-主体
+##  Movie ticket微信票务小程序-主体
 
-####Explain
+### Explain
 Movie ticket是一款在线票务、购物小程序，主要针对国内海外人士在线购票的一款在线购物系统。
 
 主要包含以下3个系统模块：
@@ -41,13 +41,13 @@ wx-scheme-server(后端)；
 </table>
 
 
-####Example
+### Example
 
 <img src="https://raw.githubusercontent.com/gejigejigeji/Movie-ticket-Wechart/master/images-folder/view1.png" width="281px" height="609px" /> 
 
 <img src="https://raw.githubusercontent.com/gejigejigeji/Movie-ticket-Wechart/master/images-folder/view3.jpg" width="281px" height="609px" /> 
 
-####花里胡哨的Banner
+### 花里胡哨的Banner
 
 <img src="https://raw.githubusercontent.com/gejigejigeji/Movie-ticket-Wechart/master/images-folder/view2.gif" width="281px" height="609px" /> 
 
