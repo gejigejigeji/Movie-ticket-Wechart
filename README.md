@@ -45,7 +45,7 @@ wx-scheme-server(后端)；
 
 <img src="https://raw.githubusercontent.com/gejigejigeji/Movie-ticket-Wechart/master/images-folder/view1.png" width="281px" height="609px" /> 
 
-<img src="https://raw.githubusercontent.com/gejigejigeji/Movie-ticket-Wechart/master/images-folder/view3.png" width="281px" height="609px" /> 
+<img src="https://raw.githubusercontent.com/gejigejigeji/Movie-ticket-Wechart/master/images-folder/view3.jpg" width="281px" height="609px" /> 
 
 ####花里胡哨的Banner
 
