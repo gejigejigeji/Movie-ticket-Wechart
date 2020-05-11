@@ -1,0 +1,121 @@
+<streamNav title-text="购物车" color="#606266" background='#fefefe' back-icon="/images/back.png" class="shopcart"></streamNav>
+<view class='wrap'>
+
+  <!--  -->
+  <view class='shopping-group'>
+
+    <view class='shopping-item' wx:for="{{productList}}" wx:key="{{index}}">
+      <view class='shop-image'>
+        <image src='{{"http://"+item.cover}}' mode='aspectFill'></image>
+      </view>
+
+      <view class='shop-product-info'>
+
+        <view>
+          <text class='shop-product-title'>{{item.title}}</text>
+        </view>
+
+        <view class='margin-top-30'>
+          <text class='font-gray'>款式:{{item.styleName}}</text>
+        </view>
+
+        <view>
+          <text class='font-gray'>尺寸:{{item.size}}</text>
+        </view>
+
+        <view class='shop-collect-delete'>
+          <image src='/images/icon/star.png' mode='aspectFill'></image>
+          <image src='/images/icon/delete.png' mode='aspectFill'></image>
+        </view>
+
+      </view>
+    </view>
+
+
+    <view class='shop-price-count'>商品价格合计：
+      <text>¥{{price}}</text>
+    </view>
+  </view>
+  <!--  -->
+  <view class='shop-address-local margin-top-50'>
+    <view class='shopping-title'>
+      <text>收货地址</text>
+    </view>
+
+
+    <view class='show-local'>
+      <view class='collection-conditon'>
+
+        <text wx:if="{{user.region!=null &&user.region!=''}}">{{user.name}}</text>
+        <text wx:if="{{user.region!=null &&user.region!=''}}">{{user.phone}}</text>
+        <text wx:if="{{user.region==null ||user.region==''}}">请设置默认收货地址</text>
+
+
+      </view>
+
+      <view>
+        <text wx:if="{{user.region!=null &&user.region!=''}}">{{user.region}}</text>
+        <text wx:if="{{user.region!=null &&user.region!=''}}">{{user.address}}</text>
+      </view>
+
+      <navigator url='/currentPage/local/local'>
+      <view class='new-collection-address'>
+        使用新的收货地址
+      </view>
+      </navigator>
+
+
+    </view>
+  </view>
+  
+  <!--  -->
+  <view class='shop-address-local margin-top-50'>
+    <view class='shopping-title'>
+      <text>备注</text>
+    </view>
+
+    <view class='shoping-notes'>
+      <input 
+      type='text'
+       confirm-type="done" 
+       placeholder='留下您对商品的其他要求' 
+       placeholder-class="shopping-note-placeholder"
+       class='shopping-notes-input'></input>
+    </view>
+  </view>
+  <!--  -->
+</view>
+
+
+
+<!-- 页脚 -->
+<view class='shop-footer' animation="{{spani}}">
+  <view class='shop-detail-list' animation="{{detailList}}">
+    <view class='shop-detail-item' wx:for="{{3}}" wx:key='{{index}}'>
+      <view>
+        <text>超级无敌巨牛皮的牙膏</text>
+        <text>×1</text>
+      </view>
+
+      <view>
+        500
+      </view>
+    </view>
+  </view>
+  <view class='shopping-detail' catchtap='onClickArrow'>
+    <text>明细</text>
+    <view class='shopping-detail-icon' animation="{{sparrow}}">
+      <wux-icon type="ios-arrow-down" color='#505460' size='15' />
+    </view>
+  </view>
+
+  <view class='shopping-enter'>
+    <view>
+      <view>需支付</view>
+      <view class='shopping-price-color'>¥{{price}}</view>
+    </view>
+    <view class='shopping-pay-btn'>支付</view>
+  </view>
+
+
+</view>

@@ -1,0 +1,6 @@
+@import '/pages/index/index.wxss';
+@import '/style/margin.wxss';
+.slider-banner{
+  padding:30rpx  20rpx;
+  margin: 0;
+}

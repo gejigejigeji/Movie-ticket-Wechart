@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "subpackages": [
+    {
+      "root": "product",
+      "name": "product",
+      "pages": [
+        "shopCart/shopCart",
+        "productDetail/productDetail"
+      ]
+    },
+    {
+      "root": "currentPage",
+      "name": "currentPage",
+      "pages": [
+        "local/local",
+        "record/record"
+      ]
+    }
+  ]
+}

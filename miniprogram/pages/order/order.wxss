@@ -1,0 +1,107 @@
+/* NV */
+
+.collection-local{
+  
+}
+
+
+
+/* TOP CONTENT */
+.order-pay-container{
+  padding: 0 20rpx;
+}
+.order-setInterTime-wrapper{
+  height:500rpx;
+  width: 100%;
+  border-bottom: 1px solid #e9eaec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 30rpx;
+}
+.order-title{
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-top: 50rpx;
+}
+.order-title text{
+  color: #808490;
+}
+.price{
+  font-size: 50rpx;
+  margin-top: 60rpx;
+}
+.orderTime{
+  margin-top: 30rpx;
+  color: #da6561;
+  border: #f2f3f5 1px solid;
+  padding: 30rpx 40rpx;
+  border-radius: 50rpx;
+  font-size:30rpx;
+
+}
+.timeColor{
+  color: #da6561;
+  font-size:30rpx;
+}
+.toastNoice{
+  margin-top: 30rpx;
+}
+
+
+.pay-title{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 80rpx;
+}
+
+.order-pay-Type{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  padding: 0 20rpx;
+}
+.order-pay-Type image{
+  width: 280rpx;
+  height: 75rpx;
+}
+.checkBox-pay{
+  width:50rpx;
+  height:50rpx;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #f2652a;
+  background: #f2662a15;
+}
+/* 页脚 */
+.local-footer-btn{
+    background: #fefefe;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:170rpx;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35rpx 35rpx 0 0;
+  box-shadow:0rpx -5rpx 30rpx 1rpx rgba(0,0,0,.3);
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  padding-bottom: 20rpx;
+}
+.add-local-btn{
+  color: #fff;
+  background: -webkit-linear-gradient(left,#e06e3d,#ed8b58);
+  height:90rpx;
+  line-height: 90rpx;
+  flex: 1;
+  text-align: center;
+  border-radius: 100rpx;
+}

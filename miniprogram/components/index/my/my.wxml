@@ -1,0 +1,21 @@
+<view class="wrap">
+<view class="avatar-top">
+  <view class="avatar-container">
+    <image src="/images/avatar/avatar.jpg" mode="aspectFill"></image>
+  </view>
+  <view class="my-name">
+  <text>暴躁老哥</text>
+  </view>
+</view>
+
+
+<view class="my-list">
+<wux-cell thumb="/images/map/icon-address.png" title="订单中心" is-link></wux-cell>        
+    <wux-cell thumb="/images/map/icon-address.png" title="我的地址" is-link></wux-cell>        
+    <wux-cell thumb="/images/map/icon-address.png" title="优惠券" is-link></wux-cell>        
+    <wux-cell thumb="/images/map/icon-address.png" title="收藏" is-link></wux-cell>        
+    <wux-cell thumb="/images/map/icon-address.png" title="客户服务" is-link></wux-cell>        
+    <wux-cell thumb="/images/map/icon-address.png" title="反馈" is-link></wux-cell>        
+</view>
+    
+</view>

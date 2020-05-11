@@ -1,0 +1,12 @@
+<view class="footer-wrap">
+
+
+<view class='footer-icons'>
+<image src='/images/icon/custom-service.png' mode='aspectFill'></image>
+<image src='{{like?star:star2}}' mode='aspectFill' bindtap="onStarTab"></image>
+</view>
+<view class='footer-buy-button'>
+  <view class='addCart' bindtap='addCart'>加入购物车</view>
+  <view class='nowBuy' bindtap='nowBuy'>立即购买</view>
+</view>
+</view>

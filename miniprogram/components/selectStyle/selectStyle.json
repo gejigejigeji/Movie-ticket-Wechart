@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wux-icon": "/ui/wux/icon/index",
+    "wux-cell": "/ui/wux/cell/index",
+    "wux-input-number": "/ui/wux/input-number/index"
+  }
+}

@@ -1,0 +1,50 @@
+@import "/style/guide.wxss";
+
+.scrollXlist{
+}
+.recommend-scrollx{
+  display: flex;
+  justify-content: start;
+  padding: 20rpx 0 0 20rpx;
+}
+.scroll-item{
+  flex: 0 0 230rpx;
+  height: 540rpx;
+  margin-right: 30rpx;
+}
+.scroll-item text{
+  white-space: pre-wrap;
+  display: block;
+}
+.recommend-extra{
+  color: #C0C4CC;
+  font-size: 24rpx;
+  height: 32rpx;
+  margin-top: 20rpx;
+}
+.recommend-title{
+  margin-top: 20rpx;
+  font-weight: 600;
+  font-size: 24rpx;
+  height: 65rpx;
+  overflow: hidden;
+}
+.recommend-price{
+  font-weight: bold;
+  color: #f2652a;
+  margin: 20rpx 0 0 10rpx;
+}
+
+.scroll-item image{
+  height: 330rpx;
+  box-shadow:7rpx 15rpx 30rpx 1rpx rgba(200,200,200,1);
+}
+
+.scroll-item image,.scroll-item{
+  border-radius: 28rpx;
+}
+
+.scrollXlist{
+  white-space: normal;
+  overflow: visible !important;
+}

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-tab": "/ui/vant/tab/index",
+    "van-tabs": "/ui/vant/tabs/index",
+    "filter":"/components/filter/filter",
+    "productList": "/components/productList/productList"
+  }
+}

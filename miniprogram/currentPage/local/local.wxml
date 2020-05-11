@@ -1,0 +1,46 @@
+<streamNav title-text="购物车" color="#606266" background='#fefefe' back-icon="/images/back.png" class="collection-local"></streamNav>
+<view class="addressGroup">
+  <view class="addressItem"
+  wx:for="{{address}}"
+  wx:key="{{index}}"
+  >
+    <view class="addressRalate">
+      <text>{{item.name}}</text>
+      <text class="addressSurname">{{item.surname}}</text>
+      <text>{{item.phone}}</text>
+      <text class="normalAddress" wx:if="{{item.normal==true}}">默认</text>
+    </view>
+    <view class="addressDetails">
+      <text>{{item.region+item.address}}</text>
+      <image src="https://wx-1253787870.cos.ap-shanghai.myqcloud.com/icon/icons_edit.png" mode="aspectFit"
+      data-id="{{item.id}}"
+      data-index="{{index}}"
+      bindtap="onUpdate"
+      ></image>
+    </view>
+  
+  </view>
+
+</view>
+
+
+
+
+<view class='local-empty'style="display:{{address.length<1?'block':'none'}}">
+<view class='wait-info'>等下！</view>
+<view class='font-gray'>我们该往哪里给你寄票呢？</view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+<view class='local-footer-btn'>
+  <view class='add-local-btn'><navigator url='/currentPage/record/record'>添加地址</navigator></view>
+</view>

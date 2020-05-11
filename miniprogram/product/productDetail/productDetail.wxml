@@ -1,0 +1,89 @@
+<streamNav title-text="主页" color="#606266" background='rgba(255,255,255,{{bgOption}})' back-icon="/images/back.png" class="prodict-detail-navigation"></streamNav>
+
+<scroll-view scroll-y bindscroll="onScroll" bindscrolltoupper='onScrollEnd'>
+
+  <swiper class="swiper-container">
+    <swiper-item class="swiper-item" wx:for="{{productDetails.master}}" wx:key="{{index}}">
+      <image class='swipe-img' src="{{item}}" mode="widthFix" />
+    </swiper-item>
+
+  </swiper>
+
+
+
+
+
+
+  <view class="content">
+    <view class='price-note'>
+      <view class='product-price'>
+        <view>
+          <text class='new-price'>{{productDetails.price}}</text>
+        </view>
+      </view>
+
+      <view class='product-title-wrap'>
+        <view class='product-title'>
+          <text>{{productDetails.title}}</text>
+        </view>
+        <view class='product-share'>
+          <wux-icon type="ios-git-branch" color='#fff' size="20" />
+        </view>
+      </view>
+      <view class='quick-icon'>
+        <view>
+          <wux-icon type="ios-thumbs-up" class='quick-icon-ios' color='#f2652a' size='15' />
+          <text>12人赞过</text>
+        </view>
+        <view>
+          <wux-icon type="ios-people" class='quick-icon-ios' color='#f2652a' size='15' />
+          <text>帮我选</text>
+        </view>
+      </view>
+
+      <view class='select-style'>
+        <view class='select-style-container' catchtap='selectStyle'>
+          <view class='select-style-group'>
+            <view class='before-sign'>
+              <text>选择</text>
+              <text class='style-number'>请选择 款式分类</text>
+            </view>
+            <view>
+              <wux-icon type="ios-arrow-forward" class='quick-icon-ios' color='#909399' size='15' />
+            </view>
+          </view>
+
+          <view class='select-style-images'>
+           <image src="{{item.url}}" mode="aspectFill" wx:for="{{productDetails.productStyle}}" wx:key="s{{index}}"/>
+           <text class='select-image-note'>共{{productDetails.productStyle.length}}种款式可选</text>
+          </view>
+        </view>
+
+      </view>
+
+      <view class='product-details'>
+      <rich-text nodes="{{productDetails.details}}"></rich-text>
+      </view>
+
+
+    </view>
+  </view>
+
+<footer 
+like="{{like}}"
+bind:onStarTab="onStarTab"
+bind:isBuyOrCar="isBuyOrCar"></footer>
+
+</scroll-view>
+
+  <wux-popup position="bottom" visible="{{styleSwich}}" bind:close="closePopup">
+    <view class='product-style-wrap-pop'>
+    <selectStyle 
+    bind:addShopingCart="addShopingCart"
+    bind:startBuy="startBuy"
+    class="select-style-cotegory" 
+    user="{{user}}" 
+    styles="{{productDetails.productStyle}}" 
+    btnType="{{isBtnType}}"></selectStyle>
+    </view>
+  </wux-popup>

@@ -1,0 +1,15 @@
+<van-tabs class="tabs-category" line-width="15" border="{{false}}" active="{{ active }}" bind:change="onChange">
+  <filter bind:filterState="filterState" bind:sortState="sortState"></filter>
+  <van-tab title="基情演出">
+    <scroll-view class="wrap" enable-back-to-top scroll-y>
+      <productList></productList>
+    </scroll-view>
+    <view class="black-view"hidden="{{filter}}"></view>
+
+  </van-tab>
+  <van-tab title="鸡你太美">内容 2</van-tab>
+  <van-tab title="唱跳篮球">内容 4</van-tab>
+  <van-tab title="兄贵">内容 3</van-tab>
+  <van-tab title="窝窝头"></van-tab>
+
+</van-tabs>

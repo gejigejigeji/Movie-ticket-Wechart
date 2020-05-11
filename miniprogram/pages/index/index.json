@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "navBar": "/components/navBar/navBar",
+    "tabBar": "/components/tabBar/tabBar",
+    "wux-cell-group": "/ui/wux/cell-group/index",
+    "wux-cell": "/ui/wux/cell/index",
+    "van-tab": "/ui/vant/tab/index",
+    "van-tabs": "/ui/vant/tabs/index",
+    
+    "home": "/components/index/home/home",
+    "tabsCategory": "/components/index/tabsCategory/tabsCategory",
+    "my": "/components/index/my/my"
+  },
+  "disableScroll": true
+}

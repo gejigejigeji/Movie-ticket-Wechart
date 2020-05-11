@@ -1,0 +1,40 @@
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+
+.wrap{
+  height: calc(100% - 325rpx );
+  display: none;
+}
+
+.content{
+}
+.category-scroll-x{
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+}
+.category-scroll-x-item{
+  margin: 0 20rpx;
+  text-align: center;
+  width: 120rpx;
+  height: 120rpx;
+  display: inline-block;
+  white-space: normal;
+}
+.cell{
+  box-sizing: border-box;
+}
+.cell .wux-cell__text{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.cell .wux-cell{
+  padding: 0 20rpx 10rpx 20rpx;
+}
+
+.show{
+  display: block;
+}

@@ -1,0 +1,58 @@
+@import "/style/guide.wxss";
+@import "/style/margin.wxss";
+
+.cell .wux-cell{
+  padding: 20rpx 0;
+}
+.cell .wux-cell__ft{
+  font-size: 24rpx;
+}
+.cell .wux-cell__text{
+  font-size: 30rpx;
+  color: #606266;
+}
+.cell .wux-cell__text::before{
+  content:'';
+  display: inline-block;
+  background:#f2652a;
+  height:40rpx;
+  width:14rpx;
+  vertical-align: bottom;
+  margin-right: 15rpx;
+  border-radius: 40%;
+}
+.wux-cell::after{
+  display:none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.tabsCategory .van-tabs__wrap{
+  height:35px !important;
+}
+.tabsCategory .van-tab{
+  line-height: 35px !important;
+}
+.tabsCategory .van-tab__pane{
+  padding-top: 100rpx;
+  min-height: 50vh;
+}
+.tabsCategory .van-tab--active{
+  font-weight: 600;
+}
+
+/* 我的 */
+.my .wux-cell__text{
+  font-size: 36rpx;
+  margin-left: 20rpx;
+} 
+
+
+
+/* 款式选择 */
+.select-style-cotegory  .wux-input-number__selector:first-child{
+  border-color:#f1a039 !important;
+}
+.select-style-cotegory  .wux-input-number__selector:last-child{
+  border-color:#eb5929 !important;
+}

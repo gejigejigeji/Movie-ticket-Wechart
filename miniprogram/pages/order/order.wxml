@@ -1,0 +1,40 @@
+<streamNav title-text="购物车" color="#606266" background='#fefefe' back-icon="/images/back.png" class="collection-local"></streamNav>
+
+<view class='order-pay-container'>
+  <view class='order-setInterTime-wrapper'>
+
+    <view class='order-title'>
+      <text>法国经典喜剧《你妈死了》</text>
+    </view>
+    <view class='price'>
+      <text style='font-size:30rpx;'>¥</text>
+      <text>3987</text>
+    </view>
+
+    <view class='orderTime'>剩余时间：<text class='timeColor'>{{overdue}}</text></view>
+    <view class='toastNoice'>
+      <text>请在3分钟内完成支付，超时订单会自动取消。</text>
+    </view>
+</view>
+
+
+<view class='pay-title'>支付方式</view>
+
+  <view class='order-pay-Type'>
+    <image src='/images/pay/wechat-zh.png' mode='aspectFit'></image>
+    <view class='checkBox-pay'>
+        <wux-icon type="ios-checkmark" color='#f2652a'size="34"/>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class='local-footer-btn'>
+  <view class='add-local-btn'>
+    <navigator url='/currentPage/record/record'>
+    支付 ¥392.00
+    </navigator>
+  </view>
+</view>

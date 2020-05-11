@@ -1,0 +1,30 @@
+<slider items="{{list}}"  class='slider-banner'></slider>
+  <view class="content margin-top-70">
+
+
+    <scroll-view scroll-x class="category-scroll-x">
+      <view class="category-scroll-x-item" wx:for="{{categoryList}}" wx:key="{{item.title}}">
+        <image src="/images/index/icon.png" mode="aspectFill"></image>
+        <text>{{item.title}}</text>
+      </view>
+    </scroll-view>
+
+  
+
+
+    <view class=" margin-top-40">
+      <wux-cell title="推荐演出" class="cell" is-link extra="更多"></wux-cell>
+      <scrollXList list="{{productList}}"></scrollXList>
+
+    </view>
+
+    <view class=" margin-top-40">
+      <wux-cell title="热门演出" class="cell" is-link extra="更多"></wux-cell>
+      <scrollXList list="{{productList}}"></scrollXList>
+    </view>
+
+    <view class="margin-top-40">
+        <wux-cell title="猜你喜欢" class="cell"></wux-cell>
+        <productList list="{{productList}}"></productList> 
+      </view>
+  </view>

@@ -1,0 +1,16 @@
+<!--components/scrollXList/scrollXlist.wxml-->
+ <scroll-view class="scrollXlist scroll-x " scroll-x>
+  <view class="recommend-scrollx">
+
+    <view wx:for="{{list}}" wx:key="{{index}}" class="scroll-item">
+    <navigator url="{{'/product/productDetail/productDetail?id='+item.id+'&cover='+item.coverSrc}}">
+      <image src="http://{{item.coverSrc}}" mode="aspectFill"></image>
+      <text class="recommend-extra">{{item.extra}}</text>
+      <text class="recommend-title">{{item.title}}</text>
+      <text class="recommend-price rmb">{{item.price}}</text>
+    </navigator>
+    </view>
+
+  </view>
+ 
+ </scroll-view>

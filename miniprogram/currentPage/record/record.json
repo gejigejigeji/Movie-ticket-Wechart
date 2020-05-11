@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+      "streamNav": "/components/streamNav/streamNav",
+      "wux-icon": "/ui/wux/icon/index",
+      "wux-toast": "/ui/wux/toast/index"
+  }
+}

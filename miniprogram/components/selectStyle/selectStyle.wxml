@@ -1,0 +1,99 @@
+<view class="select-style-wrap">
+  <view class='ani-wrap' animation="{{aniWrap}}">
+
+    <view class='image-con' animation="{{imgAni}}">
+      <image src='{{styleItems.url}}' mode='aspectFill'></image>
+    </view>
+
+    <view class='price-con' animation="{{priceAni}}">
+      <view animation="{{aniCount}}" class='price-count'>
+        <view class='rmb price'>{{price}}</view>
+        <view class='store'>库存152件</view>
+      </view>
+      <view class='local'>配送至:{{user.region==null?'请选择配送地区':user.region+user.address}}</view>
+    </view>
+
+
+
+  </view>
+
+  <scroll-view class='style-content' scroll-y bindscroll="onScroll">
+    <view class='view-container' bindtouchend='onTouchEnd'>
+      <view class='local-content'>
+        <text>配送区域</text>
+        <text class='font-minor'>(配送区域可能会影响库存请正确选择)</text>
+      </view>
+
+
+
+<navigator url="/currentPage/local/local">
+      <view class='local-wrap'>
+        <view class='cell-left'>
+          <image src='/images/map/icon-address.png' mode='aspectFill'></image>
+          <text>{{user.region==null?'请选择收货地址':user.region+user.address}}</text>
+        </view>
+        <view class='cell-right'>
+          <wux-icon color="#606266" type='ios-arrow-forward' size="20" />
+        </view>
+      </view>
+</navigator>
+
+
+
+      <view class='style-category'>
+        <view>颜色分类</view>
+        <view class='select-group'>
+          <view 
+          class='select-item {{item.selected?"select-active":""}}' 
+          data-index="{{index}}"
+          bindtap="onClickStyle"
+          wx:for="{{styles}}" 
+          wx:key="{{index}}">
+            <image src='{{item.url}}' mode='aspectFill'></image>
+            <text>{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='style-category option-style'>
+        <view>套餐类型</view>
+        <view class='select-group'>
+          <view 
+          data-index="{{index}}"
+          bindtap="onClickStyleSize"
+          wx:for="{{category}}" 
+          wx:key="{{index+1}}"
+          class='select-item {{item.selected?"select-active":""}}'>
+            <text>{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='buy-number'>
+        <view>购买数量</view>
+        <view>
+          <wux-input-number shape="circle" color="positive" controlled bindchange="onChangeCount" min="{{ 1}}" max="{{ 100 }}"  value="{{form.count}}" slot="footer" />
+        </view>
+
+      </view>
+
+
+
+
+
+
+
+
+    </view>
+  </scroll-view>
+  <view class='buy-button-group'>
+    <block wx:if="{{btnType==2}}">
+      <view class='addCart'bindtap="addShopingCart">加入购物车</view>
+      <view class='nowBuy' bindtap="startBuy">确定</view>
+    </block>
+    <block  wx:if="{{btnType==1}}">
+      <view class='signBtn'bindtap="startBuy">确定</view>
+    </block>
+  </view>
+
+</view>

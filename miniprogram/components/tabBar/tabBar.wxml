@@ -1,0 +1,28 @@
+<!--components/tabBar/tabBar.wxml-->
+<view class="tabBar-wrap">
+
+  <view class="tabBar-item"
+   wx:for="{{tabBar}}" 
+   wx:key="{{index}}"
+    bindtap="onToggle">
+    <view class="tabBar-image-wrap" data-index="{{index}}">
+      <image 
+      class="{{item.active?'fadeOut':'fadeIn'}}"
+      src="{{item.url}}" 
+      mode="aspectFill"
+      data-index="{{index}}"></image>
+
+
+      <image 
+      class="tabbar-image-color {{item.active?'fadeIn':'fadeOut'}}"
+      src="{{item.urlColor}}" 
+      mode="aspectFill"
+      data-index="{{index}}"></image>
+    </view>
+    <text 
+    class="tabBar-nav-text {{item.active?'index-active':''}}"
+    data-index="{{index}}">{{item.text}}</text>
+  </view>
+
+  
+</view>

@@ -1,0 +1,21 @@
+<navBar title-text="主页" color="#606266" back-icon="/images/back.png" >
+</navBar>
+
+
+
+
+<scroll-view class="wrap {{tabActive==0?'show':''}}" enable-back-to-top scroll-y>
+<home class="cell" prodcutList="{{prodcutList}}"></home>
+</scroll-view>
+
+
+<tabsCategory class="tabsCategory wrap {{tabActive==1?'show':''}}" wx:if="{{tabActive==1}}"></tabsCategory>
+
+
+
+
+
+<scroll-view class="wrap {{tabActive==2?'show':''}}" enable-back-to-top scroll-y>
+<my class="my"></my>
+</scroll-view>
+<tabBar bind:onTogglePage="onTogglePage"></tabBar>

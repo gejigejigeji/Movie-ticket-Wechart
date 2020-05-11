@@ -1,0 +1,127 @@
+@import "/style/guide.wxss";
+
+
+
+.filter-wrap{
+  position: absolute;
+  height: 80rpx;
+  width: 100%;
+  margin-bottom: 290rpx;
+  background: #fefefe;
+  z-index: 100;
+}
+.border-top{
+  background: #F2F6FC;
+  height: 1px;
+  width: 96%;
+  margin-left: 2%;
+}
+.filter-item{
+  align-content: center;
+  align-items: center;
+  height: 110rpx;
+  padding: 0 20rpx;
+  padding-top: 10rpx;
+}
+.filter-item view{
+  display: inline-block;
+
+}
+.filter-condition{
+  width: auto;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10rpx 10rpx 0 10rpx;
+  margin-right: 20rpx;
+}
+.filter-condition text{
+  font-size: 28rpx;
+}
+.sort-active{
+  color: #f2652a;
+}
+.filter-active{
+  color: #f2652a;
+}
+.filter-condition:last-child{
+  text-align: right;
+  float: right;
+}
+.filter-condition:last-child text{
+  color: #606266 ;
+}
+.ion-ios-arrow-down{
+  vertical-align: middle;
+  margin-left: 8rpx;
+}
+.arrow-wrap{
+  display: inline-block;
+  width: auto;
+}
+
+
+/* 综合排序 */
+.filter-sort{
+  padding: 25rpx 30rpx;
+  height: 280rpx;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fefefe;
+  z-index: 100;
+  top: 80rpx;
+}
+.sort-item{
+  border-bottom: #F2F6FC 1px solid;
+  font-size: 28rpx;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+@keyframes arrow{
+  0%{
+    transform: rotateX(0deg);
+  }
+  100%{
+    transform: rotateX(-180deg);
+
+  }
+}
+@keyframes arrowback{
+  0%{
+    transform: rotateX(-180deg);
+  }
+  100%{
+    transform: rotateX(0deg);
+
+  }
+}
+.arrow{
+  animation: arrow 180ms ease-in forwards;
+}
+.arrow-back{
+  animation: arrowback 180ms ease-in forwards;
+}
+
+
+/* 筛选 */
+.filter{
+  height: 250rpx;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fefefe;
+  padding: 20rpx;
+  padding-top: 30rpx;
+  z-index: 100;
+  top: 70rpx;
+
+}
+.filter .issue-block{
+  display: inline-block;
+  padding: 15rpx 20rpx;
+  border-radius: 30rpx;
+  border: 1px solid #f2652a;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+}

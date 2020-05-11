@@ -1,0 +1,47 @@
+<view class="filter-wrap">
+  <view class="border-top"></view>
+  <view class="filter-item">
+    <view class="filter-condition" bindtap="onSort">
+      <text class="sort-active">综合</text>
+      <view class="arrow-wrap" animation="{{cps}}">
+      <wux-icon type="ios-arrow-down" class="ion-ios-arrow-down " size="16" color="#f2652a" />
+      </view>
+    </view>
+
+    <view class="filter-condition">
+      <text>销量</text>
+    </view>
+
+    <view class="filter-condition" bindtap="onFilter">
+      <text>筛选</text>
+      <view class="arrow-wrap" animation="{{ftr}}">
+      <wux-icon type="ios-arrow-down" class="ion-ios-arrow-down " size="16" color="#f2652a" />
+      </view>
+    </view>
+  </view>
+
+  <view class="filter-sort" hidden="{{sort}}">
+    <view class="sort-item">
+      <text>综合</text>
+      <wux-icon type="md-undo" class="ion-ios-arrow-down" size="16" color="#C0C4CC" />
+    </view>
+    <view class="sort-item">
+      <text>价格从低到高</text>
+      <wux-icon type="md-undo" class="ion-ios-arrow-down" size="16" color="#C0C4CC" />
+    </view>
+    <view class="sort-item">
+      <text>价格从高到低</text>
+      <wux-icon type="md-undo" class="ion-ios-arrow-down" size="16" color="#C0C4CC" />
+    </view>
+  </view>
+
+  <view class="filter" hidden="{{filter}}">
+    <text class="issue-block">最火</text>
+    <text class="issue-block">最热</text>
+    <text class="issue-block">最傻逼</text>
+    <text class="issue-block">最热</text>
+    <text class="issue-block">编不出来了</text>
+   <text class="issue-block">最火</text>
+  </view>
+
+</view>

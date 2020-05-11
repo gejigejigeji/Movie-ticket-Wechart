@@ -1,0 +1,31 @@
+@import '/style/guide.wxss';
+.wrap{
+  height: 101%;
+  width: 100%;
+}
+.avatar-top{
+  height: 350rpx;
+  width: 100%;
+}
+.avatar-container{
+  position: relative;
+  left: 50%;
+  top: 30rpx;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 20rpx 0 rgba(200,200,200,1);
+  margin-left: -100rpx;
+}
+.avatar-container image{
+  border-radius: 50%;
+}
+.my-name{
+  text-align: center;
+  margin-top: 50rpx;
+  font-size: 40rpx;
+}
+.my-list{
+  margin-top: 40rpx;
+}

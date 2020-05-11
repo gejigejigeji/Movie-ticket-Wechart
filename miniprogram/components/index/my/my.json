@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wux-cell-group": "/ui/wux/cell-group/index",
+    "wux-cell": "/ui/wux/cell/index"
+  }
+}

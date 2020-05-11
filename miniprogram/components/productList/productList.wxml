@@ -1,0 +1,21 @@
+<view class="wrap">
+  <view class="list-group" wx:for="{{list}}" wx:key="index">
+  
+    <view class="list-img-wrap">
+      <image src="{{'http://'+item.coverSrc}}"lazy-load="{{true}}" mode="aspectFill"></image>
+    </view>
+
+    <view class="list-info">
+      <text class="product-title">{{item.title}}</text>
+      <view class="product-tips">
+      <text class="font-minor">{{item.tips}}</text>
+      </view>
+
+      <view class="product-price">
+      <text class="rmb">{{item.price}}</text>
+      <text class="font-minor">{{item.sendAddress}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>

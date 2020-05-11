@@ -1,0 +1,113 @@
+<streamNav title-text="购物车" color="#606266" background='#fefefe' back-icon="/images/back.png" class="record-local"></streamNav>
+<form bindsubmit="onSubmit">
+  <view class='record-local--form'>
+    <view class='record-local--form-item'>
+      <view class='record-input-span surname'>
+        <input type='text'
+         placeholder='姓' 
+         data-name="surname"
+         name="surname"
+         value="{{form.surname}}"
+         placeholder-style='color:#b1b4bc'
+         bindblur="onBlur" 
+         bindfocus="onFocus"></input>
+        <wux-icon
+        bindtap='onClearInput'
+        hidden="{{!close.surname}}"
+        type="ios-close-circle" 
+        color='#b1b4bc' 
+        size='20' 
+        class='record-arrow-down' />
+
+      </view>
+      <view class='record-input-span'>
+        <input 
+        type='text' 
+         bindblur="onBlur" 
+         bindfocus="onFocus"
+        placeholder='名' 
+        name="name" 
+        value="{{form.name}}"
+        data-name="name"
+        placeholder-style='color:#b1b4bc' 
+        bindblur="onBlur"></input>
+        <wux-icon 
+        hidden="{{!close.name}}"
+        type="ios-close-circle" color='#b1b4bc' size='20' class='record-arrow-down' />
+
+      </view>
+
+    </view>
+    <view class='record-local--form-item'>
+      <view class='record-input-span'>
+        <input 
+        type='number' 
+         bindblur="onBlur" 
+         bindfocus="onFocus"
+        placeholder='手机号码' 
+        name="phone" 
+        value="{{form.phone}}"
+        data-name="phone"
+        placeholder-style='color:#b1b4bc' 
+        bindblur="onBlur"></input>
+        <wux-icon 
+        hidden="{{!close.phone}}"
+        type="ios-close-circle" color='#b1b4bc' size='20' class='record-arrow-down' />
+      </view>
+
+    </view>
+    <view class='record-local--form-item'>
+      <picker 
+      mode="region" 
+      class='record-region' 
+      name="region" 
+      bindchange="onChangeRegion">
+        <view class='record-input-span'>
+          <input 
+          type='text' 
+          placeholder='请选择地区' 
+          disabled 
+          value='{{form.region}}' 
+        data-name="region"
+          placeholder-style='color:#b1b4bc'></input>
+          <wux-icon 
+          type="ios-arrow-down" color='#b1b4bc' size='15' class='record-arrow-down' />
+        </view>
+      </picker>
+
+    </view>
+
+    <view class='record-local--form-item'>
+      <view class='record-input-span'>
+        <input 
+        type='text' 
+         bindblur="onBlur" 
+         bindfocus="onFocus"
+        placeholder='详细地址' 
+        value="{{form.address}}"
+        placeholder-style='color:#b1b4bc' 
+        data-name="address"
+        name="address"></input>
+        <wux-icon 
+        hidden="{{!close.address}}"
+        type="ios-close-circle" color='#b1b4bc' size='20' class='record-arrow-down' />
+      </view>
+    </view>
+  </view>
+
+  <view class="normal-checkbox">
+    <label>
+      <checkbox-group bindchange="onChangeCheck">
+        <checkbox color="#f2652a" name="normal" value='{{form.normal}}' checked="{{form.normal==1?true:false}}"></checkbox>设为默认
+      </checkbox-group>
+    </label>
+  </view>
+  <view class='local-footer-btn'>
+    <button form-type="submit" class='add-local-btn'>
+      <navigator url='/currentPage/record/record'>保存</navigator>
+    </button>
+  </view>
+
+</form>
+
+<wux-toast id="wux-toast" />

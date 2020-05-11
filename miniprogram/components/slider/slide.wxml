@@ -1,0 +1,20 @@
+<view class="swiper-wrap">
+  <view
+      id="a{{index}}"
+      style="z-index:{{item.zindex}};"
+      data-index="{{index}}"
+      animation="{{item.ani}}"
+      catchtouchstart="touchStart"
+      catchtouchmove="touchMove"
+      catchtouchend="touchEnd"
+      class="swiper-slider "
+      wx:for="{{list}}"
+      wx:key="{{index}}">
+  <image 
+  class='slider-image'
+    style="transform:scale({{item.scale}},{{item.scale}});top:{{-item.zindex*7}}px;opacity:{{item.opacity}}"
+    data-index="{{index}}"
+    src="{{item.url}}"
+    mode="aspectFill"></image>
+  </view>
+</view>

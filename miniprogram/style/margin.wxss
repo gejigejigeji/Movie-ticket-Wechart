@@ -1,0 +1,13 @@
+.margin-top-30{
+  margin-top: 30rpx;
+}
+.margin-top-40{
+  margin-top: 40rpx;
+}
+.margin-top-50{
+  margin-top: 40rpx;
+}
+.margin-top-70{
+  margin-top: 70rpx;
+
+}

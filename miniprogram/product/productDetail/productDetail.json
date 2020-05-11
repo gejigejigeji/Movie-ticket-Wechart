@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "wux-icon": "/ui/wux/icon/index",
+    "wux-popup": "/ui/wux/popup/index",
+      "wux-cell-group": "/ui/wux/cell-group/index",
+      "wux-cell": "/ui/wux/cell/index",
+      "footer":"/components/footer/footer",
+      "selectStyle":"/components/selectStyle/selectStyle",
+      "streamNav":"/components/streamNav/streamNav"
+  }
+}
